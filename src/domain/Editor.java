@@ -1,4 +1,8 @@
 package domain;
+/**
+ * Клас, який описує редактора
+ * @author Марк Дериведмідь
+ */
 public class Editor extends Artist {
 
     public Editor(boolean electronicEditing, String[] skiils, String name, String jobTitle, int level, String dept) {
@@ -31,7 +35,9 @@ public class Editor extends Artist {
         return s;
             
     }
-
+    /**
+     * true - якщо редактор працює з папером
+     */
     private boolean electronicEditing;
 
     public boolean getPreferences() {

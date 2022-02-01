@@ -1,5 +1,8 @@
 package domain;
-
+/**
+ * Клас, який описує артиста
+ * @author Марк Дериведмідь
+ */
 public class Artist extends Employee {
 
     public Artist(String[] skiils, String name, String jobTitle, int level, String dept) {

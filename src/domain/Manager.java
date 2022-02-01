@@ -1,4 +1,8 @@
 package domain;
+/**
+ * Клас, що описує менеджера
+ * @author Марк Дериведмідь
+ */
 public class Manager extends Employee {
 
     public Manager(Employee[] employees, String name, String jobTitle, int level, String dept) {
@@ -20,9 +24,11 @@ public class Manager extends Employee {
         super();
         employees = new Employee[10];
     }
-
+    /**
+     * Масив, що містить підлеглиг менеджера
+     */
     private Employee[] employees;
-
+    
     public String getEmployees() {
         String s = "";
         for (Employee e : employees) {
@@ -31,11 +37,17 @@ public class Manager extends Employee {
         s=s.substring(0, s.length() - 2);
         return s;
     }
-
+    /**
+     * Метод, що встановлює підлеглих менеджера
+     * @param employees 
+     */
     public void setEmployees(Employee[] employees) {
         this.employees=employees;
     }
-
+    /**
+     * Метод, що повертає підлеглих менеджера
+     * @return підлеглі менеджер
+     */
     public Employee[] getEmployeesList() {
         return employees;
     }
